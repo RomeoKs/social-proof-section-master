@@ -1,0 +1,209 @@
+:root {
+    --dark-violet-bk: #512051;
+    --violet-txt: #EE69A4;
+    --gray-violet-txt: #927B91;
+    --rectangle-violet: #F7F2F7;
+    --white-txt: #FFFFFF;
+}
+
+/* || CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ||  GENERAL STYLES*/
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.attribution a {
+     color: hsl(228, 45%, 44%);
+}
+body {
+    font-family: 'Spartan', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white-txt);
+    box-sizing: border-box;
+}
+main {
+    flex-grow: 1;
+    width: 87.2%;
+    margin: auto ;
+}
+
+h1 {
+    color: var(--dark-violet-bk);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.7142857313156128px;
+    text-align: left;
+}
+
+/* 	=====================
+	    MOBILE 375px
+    =====================
+*/
+@media(max-width:376px) {
+.bck-1 img{
+    width: 374px;
+    height: 232px;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.bck-2 img{
+    width: 374px;
+    height: 232px;
+    z-index: -2;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+}
+h1 {
+    font-size: 32px;
+    line-height: 32px; /* or 100% */
+    text-align: center;
+    margin-top: 80px;
+    letter-spacing: -1.14286px;
+    margin-bottom: 29px;
+}
+.subtitle {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: var(--gray-violet-txt);
+    margin-bottom: 37px;
+}
+.rating-1, .rating-2, .rating-3 {
+    width: 100%;
+    height: 78px;
+    margin: auto;
+    background-color: var(--rectangle-violet);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.rating-txt {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px; /* identical to box height */
+    text-align: center;
+    color: var(--dark-violet-bk);
+    margin-top: 9px;
+}
+.testimonials {
+    width: 100%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+.testimonial-1, .testimonial-2, .testimonial-3 {
+    width: 100%;
+    height: 248px;
+    margin: auto;
+    background-color: var(--dark-violet-bk);
+    border-radius: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    padding: 32px 30px 32px 32px;
+
+}
+.user img {
+    border-radius: 50%;
+    width: 40px;
+    margin-right: 23px;
+}
+.user-name {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height */
+    color: var(--white-txt);
+    margin-bottom: 7px;
+}
+.user-title {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    /* identical to box height */
+    color: var(--violet-txt);
+}
+.user {
+    display: flex;
+    align-items: center;
+    margin-top: 9px;
+}
+.testimonial-1 p, .testimonial-2 p, .testimonial-3 p   {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 22px; /* or 169% */
+    letter-spacing: -0.232143px;
+    color: var(--white-txt);
+    width: 100%;
+    margin-top: 29px;
+}
+
+}
+
+/* 	=====================
+	   DESKTOP 1440px
+    =====================
+*/
+@media screen and (min-width: 960px) {
+
+
+}
