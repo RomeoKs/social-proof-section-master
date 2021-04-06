@@ -338,5 +338,7 @@ main {
     width: 100%;
     margin-top: 29px;
 }
-
+.attribution {
+    margin-bottom: 15px;
+}
 }
